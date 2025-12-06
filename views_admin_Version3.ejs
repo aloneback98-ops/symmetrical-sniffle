@@ -1,0 +1,17 @@
+<h2>Admin Paneli</h2>
+
+<table border="1">
+  <tr>
+    <th>Kullanıcı</th>
+    <th>Rol</th>
+  </tr>
+
+  <% users.forEach(u => { %>
+  <tr>
+    <td><%= u.username %></td>
+    <td><%= u.role %></td>
+  </tr>
+  <% }) %>
+</table>
+
+<a href="/dashboard">Geri</a>

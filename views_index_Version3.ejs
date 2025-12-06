@@ -1,0 +1,9 @@
+<h1>Hoş Geldin!</h1>
+
+<% if (!user) { %>
+<a href="/login">Giriş Yap</a> |
+<a href="/register">Kayıt Ol</a>
+<% } else { %>
+<a href="/dashboard">Panelim</a> |
+<a href="/logout">Çıkış</a>
+<% } %>
